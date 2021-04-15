@@ -1,0 +1,23 @@
+server:
+  port: 9191
+  
+ 
+management:
+  endpoints:
+    web:
+     exposure:
+      include: "*"
+      
+
+#below details will be shown as part of "/actuator/info" end point      
+info:
+ application:
+   name: springboot_actuator_demo
+   deacription: springboot_2.0-enhancement
+   artifact: sprinboor_2x_actuator
+   version: v1
+ techstack: 
+  java: java 1.8
+  sprinboot: 2.4.2
+  angular: 8
+  database: sql
