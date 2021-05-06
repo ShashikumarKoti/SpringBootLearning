@@ -15,7 +15,7 @@ public class LoggingAdvice {
 
 	Logger log = org.slf4j.LoggerFactory.getLogger(LoggingAdvice.class);
 	
-	@Pointcut(value="execution(* com.skoti.learning.*.*.*(..))")
+	@Pointcut(value="execution(* com.skoti.learning.service.ProductService.*(..))")
 	public void myPointcut() {
 		
 	}
@@ -31,7 +31,7 @@ public class LoggingAdvice {
 				+ mapper.writeValueAsString(args));
 		
 		Object responseObject = pjp.proceed();
-		log.info(className + " : "+ methodName+"()" + "Response: "+ mapper.writeValueAsString(responseObject));
+		log.info(className + " : "+ methodName+"()" + " Response: "+ mapper.writeValueAsString(responseObject));
 		return responseObject;
 	}
 	
