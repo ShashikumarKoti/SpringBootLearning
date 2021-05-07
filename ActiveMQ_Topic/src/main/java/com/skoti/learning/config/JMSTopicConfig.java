@@ -16,6 +16,7 @@ public class JMSTopicConfig {
 
 	@Value("${spring.activemq.broker-url}")
 	private String BROKER_URL;
+	
 	@Bean
 	public Topic topic() {
 		return new ActiveMQTopic("topic.order");
