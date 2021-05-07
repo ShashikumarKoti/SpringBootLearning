@@ -26,6 +26,9 @@ public class OperationSender {
 	@Autowired
 	private Queue queue2;
 
+	/*
+	 * 
+	 */
 	@PostMapping("/save")
 	public String sendOperDetails(@RequestBody ScheduleOperation scheduleOperation) throws JsonProcessingException {
 		System.out.println("Sending message....");
