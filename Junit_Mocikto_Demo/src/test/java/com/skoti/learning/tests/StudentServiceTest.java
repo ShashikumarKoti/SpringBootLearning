@@ -20,7 +20,6 @@ import com.skoti.learning.service.StudentAddressService;
 import com.skoti.learning.service.StudentService;
 
 @SpringBootTest
-
 public class StudentServiceTest {
 
 	@InjectMocks
